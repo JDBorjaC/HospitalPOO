@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package core.hospital;
 
-/**
- *
- * @author Fla_Borja_Cantillo
- */
+import core.hospital.management.Ward;
+import core.hospital.persons.Team;
+import java.util.ArrayList;
+
+
 public class Hospital {
+    private ArrayList<Team> teams;
+    private ArrayList <Ward> wards;
     
+    public Hospital(){
+        this.teams = new ArrayList<>();
+        this.wards = new ArrayList<>();
+    }
 }
