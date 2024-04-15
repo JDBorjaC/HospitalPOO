@@ -9,5 +9,9 @@ package core.hospital.persons;
  * @author Fla_Borja_Cantillo
  */
 public class ConsultantDoctor extends Doctor{
+    private Team leaderOf;
     
+    public ConsultantDoctor(int id){
+        super(id);
+    }
 }

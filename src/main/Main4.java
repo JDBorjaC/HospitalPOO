@@ -1,5 +1,7 @@
 package main;
 
+import core.hospital.Hospital;
+
 public class Main4 {
     
     public static void main(String[] args) {
@@ -28,36 +30,36 @@ public class Main4 {
         hospital.addPatient(hospital.getWard(10), hospital.getTeam(0), 0 + 10); // Receives the Ward, the Team and the Patient id.
         hospital.assignPatientDoctor(hospital.getPatient(0 + 10), 1); // Receives the Patient and the Doctor id is the Patient Team id plus the second function parameter (int).
         hospital.assignPatientDoctor(hospital.getPatient(0 + 10), 2);
-        hospital.assignAppoiment(hospital.getPatient(0 + 10), 2); // The parameter values are the same as assignPatientDoctor.
-        hospital.assignAppoiment(hospital.getPatient(0 + 10), 2);
-        hospital.assignAppoiment(hospital.getPatient(0 + 10), 2);
+        hospital.assignAppointment(hospital.getPatient(0 + 10), 2); // The parameter values are the same as assignPatientDoctor.
+        hospital.assignAppointment(hospital.getPatient(0 + 10), 2);
+        hospital.assignAppointment(hospital.getPatient(0 + 10), 2);
 
         hospital.addPatient(hospital.getWard(10), hospital.getTeam(100), 1 + 10);
         hospital.assignPatientDoctor(hospital.getPatient(1 + 10), 1);
 
         hospital.addPatient(hospital.getWard(10), hospital.getTeam(100), 2 + 10);
         hospital.assignPatientDoctor(hospital.getPatient(2 + 10), 1);
-        hospital.assignAppoiment(hospital.getPatient(2 + 10), 1);
-        hospital.assignAppoiment(hospital.getPatient(2 + 10), 1);
-        hospital.assignAppoiment(hospital.getPatient(2 + 10), 1);
-        hospital.assignAppoiment(hospital.getPatient(2 + 10), 1);
+        hospital.assignAppointment(hospital.getPatient(2 + 10), 1);
+        hospital.assignAppointment(hospital.getPatient(2 + 10), 1);
+        hospital.assignAppointment(hospital.getPatient(2 + 10), 1);
+        hospital.assignAppointment(hospital.getPatient(2 + 10), 1);
         hospital.assignPatientDoctor(hospital.getPatient(2 + 10), 2);
         hospital.assignPatientDoctor(hospital.getPatient(2 + 10), 3);
-        hospital.assignAppoiment(hospital.getPatient(2 + 10), 3);
-        hospital.assignAppoiment(hospital.getPatient(2 + 10), 3);
+        hospital.assignAppointment(hospital.getPatient(2 + 10), 3);
+        hospital.assignAppointment(hospital.getPatient(2 + 10), 3);
 
         hospital.addPatient(hospital.getWard(10), hospital.getTeam(0), 3 + 10);
         hospital.assignPatientDoctor(hospital.getPatient(3 + 10), 1);
-        hospital.assignAppoiment(hospital.getPatient(3 + 10), 1);
+        hospital.assignAppointment(hospital.getPatient(3 + 10), 1);
 
         hospital.addWard(50);
 
         hospital.addPatient(hospital.getWard(50),hospital.getTeam(0), 0 + 50);
         hospital.assignPatientDoctor(hospital.getPatient(0 + 50), 1);
         hospital.assignPatientDoctor(hospital.getPatient(0 + 50), 2);
-        hospital.assignAppoiment(hospital.getPatient(0 + 50), 1);
-        hospital.assignAppoiment(hospital.getPatient(0 + 50), 1);
-        hospital.assignAppoiment(hospital.getPatient(0 + 50), 1);
+        hospital.assignAppointment(hospital.getPatient(0 + 50), 1);
+        hospital.assignAppointment(hospital.getPatient(0 + 50), 1);
+        hospital.assignAppointment(hospital.getPatient(0 + 50), 1);
         hospital.assignPatientDoctor(hospital.getPatient(0 + 50), 3);
         hospital.assignPatientDoctor(hospital.getPatient(0 + 50), 4);
 
@@ -70,11 +72,11 @@ public class Main4 {
 
         hospital.addPatient(hospital.getWard(50), hospital.getTeam(0), 3 + 50);
         hospital.assignPatientDoctor(hospital.getPatient(3 + 50), 3);
-        hospital.assignAppoiment(hospital.getPatient(3 + 50), 3);
-        hospital.assignAppoiment(hospital.getPatient(3 + 50), 3);
-        hospital.assignAppoiment(hospital.getPatient(3 + 50), 3);
-        hospital.assignAppoiment(hospital.getPatient(3 + 50), 3);
-        hospital.assignAppoiment(hospital.getPatient(3 + 50), 3);
+        hospital.assignAppointment(hospital.getPatient(3 + 50), 3);
+        hospital.assignAppointment(hospital.getPatient(3 + 50), 3);
+        hospital.assignAppointment(hospital.getPatient(3 + 50), 3);
+        hospital.assignAppointment(hospital.getPatient(3 + 50), 3);
+        hospital.assignAppointment(hospital.getPatient(3 + 50), 3);
 
         System.out.println("Number of doctors per patient:");
         hospital.numberDoctorsPatient();
